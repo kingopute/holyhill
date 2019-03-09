@@ -1,0 +1,30 @@
+page-weeklydeclarationdetails {
+ion-content {
+         background-color: #000 !important;
+    }
+
+    .image {
+        width: 100%;
+        //height: auto;
+        max-height: 350px;
+    }
+
+        ion-icon{
+color: #fff;
+}
+
+    h4 {
+        text-align: center;
+        color: #fff;
+       font-family: home;
+       font-size: 25px;
+    }
+
+
+    .description {
+        color: #fff;
+        font-family: home;
+        font-size: 14px;
+        margin-top: -1vh;
+    }
+}

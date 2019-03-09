@@ -1,0 +1,30 @@
+page-ministries {
+
+    ion-content {
+        background: #000 !important;
+    }
+
+    ion-card {
+        position: relative;
+        text-align: center; 
+         font-family: home; 
+    }
+    .title{
+        font-family: home;
+    }
+    
+    .titles {
+      position: absolute;
+      top: 70%;
+      font-size: 2.0em;
+      width: 100%;
+      color: #DFDCE3;
+       font-family: home;
+    }
+
+    .border {
+        border-radius: 2px 2px 2px 2px;
+        //box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
+    }
+
+}

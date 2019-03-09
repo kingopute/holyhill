@@ -1,0 +1,122 @@
+page-others {
+   ion-icon{
+color: #fff;
+}
+
+.title{
+    font-family: home;
+}
+
+
+    ion-content {
+        background: #000 !important;
+    }
+
+ .h{
+		height: 70px;
+		background-color: #fff;
+		// border-radius: 10px 10px 10px 10px;
+        //box-shadow: 2px 2px 3px 0px rgba(2,2,0,0.75);
+        //box-shadow: 1px 1px 2px 1px #901d78;
+       
+	}
+
+    .scroll-content{
+
+align-content: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+//font-weight: light;
+
+}
+
+    $btn-color: #901d78;
+$btn-alt-color: salmon;
+.btn {
+    width: 95%;
+   margin-left: 2%;
+    border-radius: 4px;
+    border: 2px solid $btn-color;
+    color: $btn-color;
+    display: inline-block;
+    margin: 0 .25em;
+    overflow: hidden;
+    padding: 24px 60px 24px 16px;
+    position: relative;
+    text-decoration: none;
+    line-height: 1;
+    .btn-content {
+        font-size: 1.3em;
+        line-height: 1.2;
+        padding: 0 26px;
+        position: relative;
+        right: 0;
+        transition: right 300ms ease;
+        display: block;
+        text-align: left;
+        color: #fff;
+        font-family: home;
+    }
+    .icon {
+        border-left: 1px solid $btn-color;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 50%;
+        transition: all 300ms ease;
+        transform: translateY(-50%);
+        width: 58px;
+        height: 70%;
+        i {
+            position: relative;
+            top: 60%;
+            transform: translateY(-50%);
+        }
+    }
+     
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: $btn-color;
+        opacity: 0;
+        transition: opacity 300ms ease;
+    }
+    &:hover {
+        .btn-content {
+            right: 100%;
+        }
+        .icon {
+            border-left: 0;
+            font-size: 1.8em;
+            width: 100%;
+        }
+        &:after {
+            opacity: .2;
+        }
+    }
+    &.btn-alt-color {
+        border-color: $btn-alt-color;
+        color: $btn-alt-color;
+        .icon {
+            border-left-color: $btn-alt-color;
+        }
+        &:after {
+            background-color: $btn-alt-color;
+        }
+    }
+}
+
+
+
+
+
+}
+
+
+

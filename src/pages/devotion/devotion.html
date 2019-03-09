@@ -1,0 +1,67 @@
+<!--
+  Generated template for the DevotionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+		<ion-title>Daily Devotional</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+
+
+
+
+<br>
+
+
+<div text-center>
+<section  *ngFor="let item of devotional" class="border" (tap)="series($event, item)">
+    <a href="#" class="btn">
+        <span class="btn-content">{{item.month}}</span>
+        <span class="icons"><ion-icon  ios="ios-arrow-round-forward" md="md-arrow-round-forward" aria-hidden="true" class="icons"></ion-icon></span>
+    </a>
+</section>
+</div>
+
+ <!--<ion-card *ngFor="let item of devotional" class="border" (tap)="series($event, item)">
+    
+    <ion-card-content>
+      
+      <ion-card-title>
+        {{item.title}}
+      </ion-card-title>
+      
+      <ion-row>
+        <ion-col class="date">
+          {{item.duration}}
+        </ion-col>
+        <ion-col col-1>
+          <ion-icon name={{item.icon1}}></ion-icon>
+        </ion-col>
+        <ion-col col-1>
+          <ion-icon name={{item.icon2}}></ion-icon>
+        </ion-col>
+      </ion-row>
+    
+    </ion-card-content>
+  
+  </ion-card>-->
+  
+
+
+
+    
+
+
+</ion-content>
