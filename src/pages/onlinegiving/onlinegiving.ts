@@ -4,6 +4,7 @@ import { OfferingPage } from '../offering/offering';
 import { TithePage } from '../tithe/tithe';
 import { CharityPage } from '../charity/charity';
 import { OthersPage } from '../others/others';
+import { ThanksgivingPage } from '../thanksgiving/thanksgiving';
 //import { ChikaPage } from '../chika/chika';
 /**
  * Generated class for the OnlinegivingPage page.
@@ -52,6 +53,11 @@ monthfilter() {
        //this.navCtrl.push(CentralPage);
          this.navCtrl.push(OthersPage);
       }
+
+      else if (this.filtermonthwise == "5"){
+        //this.navCtrl.push(CentralPage);
+          this.navCtrl.push(ThanksgivingPage);
+       }
 }
 
 

@@ -94,7 +94,17 @@ import { OthersPage } from './../pages/others/others';
 import { OnetimeothersPage } from './../pages/onetimeothers/onetimeothers';
 import { ReoccurringothersPage } from './../pages/reoccurringothers/reoccurringothers';
 
-import { OneSignal } from '@ionic-native/onesignal';
+import { StreamaudioPage } from './../pages/streamaudio/streamaudio';
+import { StreamvideoPage } from './../pages/streamvideo/streamvideo';
+
+import { InboxPage } from './../pages/inbox/inbox';
+import { InboxdetailsPage } from './../pages/inboxdetails/inboxdetails';
+
+import { ThanksgivingPage } from './../pages/thanksgiving/thanksgiving';
+
+
+
+
 
 
 
@@ -159,7 +169,12 @@ OnetimecharityPage,
 ReoccurringcharityPage,
 OthersPage,
 OnetimeothersPage,
-ReoccurringothersPage
+ReoccurringothersPage,
+StreamaudioPage,
+StreamvideoPage,
+InboxPage,
+InboxdetailsPage,
+ThanksgivingPage
     
   ],
   imports: [
@@ -173,6 +188,7 @@ ReoccurringothersPage
         { component: TabsPage, name: 'TabsPage', segment: 'tabs-page' },
         { component: WelcomePage, name: 'Welcome', segment: 'welcome' },
         { component: OnlinegivingPage, name: 'Onlinegiving', segment: 'onlinegiving' },
+        { component: InboxPage, name: 'InboxPage', segment: 'inbox' },
         { component: DevotionPage, name: 'Devotion', segment: 'devotion' },
         { component: WeeklydeclarationPage, name: 'Weeklydeclaration', segment: 'Weeklydeclaration' },
         { component: SpeakerDetailPage, name: 'SpeakerDetail', segment: 'speakerDetail/:speakerId' },
@@ -264,7 +280,13 @@ OnetimecharityPage,
 ReoccurringcharityPage,
 OthersPage,
 OnetimeothersPage,
-ReoccurringothersPage
+ReoccurringothersPage,
+StreamaudioPage,
+StreamvideoPage,
+InboxPage,
+InboxdetailsPage,
+ThanksgivingPage
+
   ],
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
@@ -274,7 +296,7 @@ ReoccurringothersPage
     Calendar,
     SocialSharing,
     SplashScreen,
-     OneSignal,
+    
   ]
 })
 export class AppModule { }

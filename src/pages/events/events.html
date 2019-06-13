@@ -9,23 +9,46 @@
 
 <ion-content padding>
 
-  <ion-slides pager effect="coverflow">
 
-    <ion-slide *ngFor="let item of events" (tap)="event($event, item)">
-      
-      <div class="container">
-        <img [src]="item.image" (load)="item.loaded = true" [hidden]="!item.loaded" />
-        <img src="assets/img/loading.gif" [hidden]="item.loaded">
 
-    <button class="register" ion-button block color="myGreen" outline medium>More Details</button>  
 
-        <!--<div class="event">{{item.title}}</div>
 
-        <div class="date">{{item.day}}</div>-->
-      </div>
+    <div *ngFor="let item of events" class="border" (tap)="event($event, item)">
+
     
-    </ion-slide>
+        <ion-card-content>
+     
+           <ion-row>
+             <ion-col>
+               <p class="photo">{{item.month}}<br>{{item.day}}</p>
+            
+             </ion-col>
+  
+             <ion-col class="title2">
+            {{item.title}}
+             <br>
+             <ion-col class="price">{{item.time}}</ion-col>
+             </ion-col>
 
-  </ion-slides>
+             <ion-col>
+                <img [src]="item.photo" class="photo1" (load)="item.loaded = true" [hidden]="!item.loaded" />
+                <img src="assets/img/loading.gif" class="photo1" [hidden]="item.loaded">
+            </ion-col>
+
+           </ion-row>
+
+        
+           
+           <hr class="r">
+         
+         </ion-card-content>
+       
+    </div>
+
+
+
+
+
+
 
 </ion-content>

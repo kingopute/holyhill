@@ -1,7 +1,7 @@
 page-events {
 
     ion-content {
-        background-color: #000 !important;
+        background-color: #000000 !important;
     }
 
     .swiper-pagination-bullet-active {
@@ -33,14 +33,51 @@ color: #fff;
         font-family: home;
     }
 
-    .date {
-        position: absolute;
-        bottom: 10%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: home;
-        font-size: 18px;
-        color: #DFDCE3;
+    .photo {
+        margin-top: -2vh;
+        color: #b7aeb5;
+        font-size: 15px;
+        //font-family: home;
+         text-align: left;
+         
     }
+
+    .photo1 {
+        margin-top: -2vh;
+        color: #b7aeb5;
+        font-size: 15px;
+        //font-family: home;
+         text-align: left;
+         margin-left: 80%;
+         height: 50px;
+         width: 50px;
+         
+    }
+
+
+    .title2 {
+        margin-top: -2vh;
+        color: #fff;
+        font-size: 15px;
+        //font-family: home;
+         text-align: left;
+         position: absolute;
+         margin-left: 12%;
+    }
+
+    .r {
+        height: 1px;
+        color:#b7aeb5;
+        background-color:#b7aeb5;
+        }
+
+    .price{
+        color: #b7aeb5;
+          //font-family: home;
+          text-align: left;
+          position: absolute;
+          margin-left: -1%;
+          font-size: 12px;
+        }
 
 }

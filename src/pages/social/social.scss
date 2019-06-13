@@ -16,15 +16,38 @@ page-social {
         text-decoration: none;
     }
 
-      .scroll-content{
 
-align-content: center;
-display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: center;
-//font-weight: light;
+.imm{
+    height: 50px;
+    width: 50px;
+}
 
+.r {
+    height: 1px;
+    color:#ffffff;
+    background-color:#ffffff;
+    }
+.title2{
+color: #ffffff;
+margin-left: 0%;
+}
+
+    ion-content {
+        background: #000 !important;
+    }
+    ion-icon{
+color: #fff;
+
+}
+
+
+.cc{
+    color: #fff;
+    font-family: home;
+    position: absolute;
+    top: 20px;
+    margin-left: 2%;
+    font-size: 15px;
 }
 
 }

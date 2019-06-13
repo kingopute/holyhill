@@ -33,7 +33,7 @@ import { MorePage } from '../pages/more/more';
 //import { MusicPage } from '../pages/music/music';
 //import { TithingPage } from '../pages/tithing/tithing';
 //import { ConnectPage } from '../pages/connect/connect';
-//import { MinistriesPage } from '../pages/ministries/ministries';
+import { InboxPage } from '../pages/inbox/inbox';
 //import { LocationMapPage } from '../pages/location-map/location-map';
 
 import { OnlinegivingPage } from './../pages/onlinegiving/onlinegiving';
@@ -44,7 +44,7 @@ import { WeeklydeclarationPage } from './../pages/weeklydeclaration/weeklydeclar
 import { WeeklydeclarationdetailsPage } from './../pages/weeklydeclarationdetails/weeklydeclarationdetails';
 
 
-import { OneSignal } from '@ionic-native/onesignal';
+
 
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
@@ -77,8 +77,8 @@ export class ConferenceApp {
     { title: 'Sermons', name: 'TabsPage', component: TabsPage, tabComponent: SermonsPage, index: 1, icon: 'mic' },
     { title: 'Online Giving', name: 'TabsPage', component: TabsPage, tabComponent: OnlinegivingPage, index: 2, icon: 'card' },
     { title: 'Daily Devotional', name: 'TabsPage', component: TabsPage, tabComponent: DevotionPage, index: 3, icon: 'book' },
-    //{ title: 'Events', name: 'EventsPage', component: EventsPage, icon: 'information-circle' },
-   //{ title: 'Weekly Declaration', name: 'WeeklydeclarationPage', component: WeeklydeclarationPage, icon: 'information-circle' },
+    { title: 'Events', name: 'EventsPage', component: EventsPage, icon: 'md-calendar' },
+   { title: 'Inbox', name: 'InboxPage', component: InboxPage, icon: 'notifications' },
     { title: 'More', name: 'TabsPage', component: TabsPage, tabComponent: MorePage, index: 4, icon: 'apps' }
   ];
  // loggedInPages: PageInterface[] = [
@@ -108,7 +108,7 @@ export class ConferenceApp {
     public confData: ConferenceData,
     public storage: Storage,
     public splashScreen: SplashScreen,
-    public oneSignal:OneSignal
+   
   ) {
       
       //Firebase Configuration
@@ -131,7 +131,7 @@ export class ConferenceApp {
         }
         this.platformReady()
 
-        this.initApp();
+      
 
       });
 
@@ -247,35 +247,7 @@ export class ConferenceApp {
 
 
 
-initApp(){
 
-    // this.statusBar.overlaysWebView(true);
-    //this.statusBar.backgroundColorByHexString('#ffffff');
-
-
-    this.oneSignal.startInit('928f9393-947c-4fd7-9fdd-5fdbfb9fd7fa', '716893243943');
-    
-    this.oneSignal.setSubscription(true);
-    //this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.InAppAlert);
-
-    this.oneSignal.handleNotificationReceived().subscribe(() => {
-      // do something when notification is received
-    });
-
-    this.oneSignal.handleNotificationOpened().subscribe(() => {
-      // do something when a notification is opened
-    });
-
-    this.oneSignal.endInit();
-
-    //this.ga.startTrackerWithId('UA-85xxxxx7-3')
-    //.then(() => {
-
-      //this.ga.trackView('App V3 Started');
-
-      // })
-      //.catch(e => console.log('Error starting GoogleAnalytics', e));
-    }
 
 
 

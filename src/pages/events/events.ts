@@ -14,7 +14,7 @@ export class EventsPage {
   constructor(public navCtrl: NavController) {
     
     firebase.database().ref('events').on('value', snapshot => {
-      this.events = snapshot.val();
+      this.events = snapshot.val().reverse();
     });
   
   }

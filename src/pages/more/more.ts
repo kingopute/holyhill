@@ -7,6 +7,8 @@ import { LeadersPage } from './../leaders/leaders';
 import { BranchesPage } from './../branches/branches';
 import { AboutUsPage } from './../about-us/about-us';
 
+import { InboxPage } from './../inbox/inbox';
+
 //import { FirsttimerpasscodePage } from './../firsttimerpasscode/firsttimerpasscode';
 //import { MemberspasscodePage } from './../memberspasscode/memberspasscode';
 import { DevotionalPage } from './../devotional/devotional';
@@ -78,6 +80,10 @@ export class MorePage {
 
  events() {
     this.navCtrl.push(EventsPage);
+  }
+
+  inbox() {
+    this.navCtrl.push(InboxPage);
   }
 
 blog() {

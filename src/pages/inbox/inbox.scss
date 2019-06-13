@@ -1,0 +1,35 @@
+page-inbox {
+    ion-content {
+        background: #ffffff !important;
+    }
+    .photo {
+      height: 70px;
+     width: 70px;
+      margin-top: 0px;
+      margin-left: 5%;
+    }
+      .price{
+        color: #66757f;
+          font-family: home;
+          text-align: left;
+          margin-left: -1%;
+          font-size: 12px;
+        }
+      
+           .title2 {
+              //margin-top: -2vh;
+              color: #66757f;
+              font-size: 15px;
+              font-family: home;
+               text-align: left;
+               margin-left: -48%;
+          }
+
+        .r {
+            height: 1px;
+            color:#b7aeb5;
+            background-color:#b7aeb5;
+            }
+
+
+}

@@ -11,62 +11,137 @@
 
 
 <ion-content>
-<br>
-
-<div text-center>
-<section *ngFor="let item of more.ministries" (tap)="events()">
-    <a href="#" class="btn">
-        <span class="btn-content">Events</span>
-        <span class="icon"><ion-icon  ios="ios-arrow-round-forward" md="md-arrow-round-forward" aria-hidden="true"></ion-icon></span>
-    </a>
-</section>
-</div>
 
 
-<div text-center>
-<section *ngFor="let item of more.ministries" (tap)="blog()">
-    <a href="#" class="btn">
-        <span class="btn-content">Pastor's Blog</span>
-        <span class="icon"><ion-icon  ios="ios-arrow-round-forward" md="md-arrow-round-forward" aria-hidden="true"></ion-icon></span>
-    </a>
-</section>
-</div>
 
-<!--<div text-center>
-<section *ngFor="let subitem of more.ministries" (tap)="ministries($event, subitem)">
-    <a href="#" class="btn">
-        <span class="btn-content">Ministries</span>
-        <span class="icon"><ion-icon  ios="ios-arrow-round-forward" md="md-arrow-round-forward" aria-hidden="true"></ion-icon></span>
-    </a>
-</section>
-</div>-->
 
-<div text-center>
-<section *ngFor="let subitem of more.about" (tap)="about($event, subitem)">
-    <a href="#" class="btn">
-        <span class="btn-content">About Us</span>
-        <span class="icon"><ion-icon  ios="ios-arrow-round-forward" md="md-arrow-round-forward" aria-hidden="true"></ion-icon></span>
-    </a>
-</section>
-</div>
- 
-<div text-center>
-<section  *ngFor="let subitem of more.connect" (tap)="connect($event, subitem)">
-    <a href="#" class="btn">
-        <span class="btn-content">Contact Us</span>
-        <span class="icon"><ion-icon  ios="ios-arrow-round-forward" md="md-arrow-round-forward" aria-hidden="true"></ion-icon></span>
-    </a>
-</section>
-</div>
- 
-<div text-center>
-<section  *ngFor="let subitem of more.social" (tap)="social($event, subitem)">
-    <a href="#" class="btn">
-        <span class="btn-content">Social Media</span>
-        <span class="icon"><ion-icon  ios="ios-arrow-round-forward" md="md-arrow-round-forward" aria-hidden="true"></ion-icon></span>
-    </a>
-</section>
-</div>
+    <div *ngFor="let item of more.ministries"(tap)="events()">
+       
+        <ion-card-content>
+           
+           <ion-row>
+             <ion-col>
+                    <span class="icon"><ion-icon name="md-calendar">&nbsp;&nbsp;&nbsp;</ion-icon></span>
+
+                    <span class="cc">Events</span>
+                   
+             </ion-col>
+  
+           </ion-row>
+           <hr class="r">
+         
+         </ion-card-content>
+       
+    </div>
+
+
+
+
+    
+    <div *ngFor="let item of more.ministries"(tap)="inbox()">
+
+        <ion-card-content>
+     
+           <ion-row>
+             <ion-col>
+                    <span class="icon"><ion-icon name="notifications">&nbsp;&nbsp;&nbsp;</ion-icon></span>
+
+                    <span class="cc">Inbox</span>
+                   
+             </ion-col>
+  
+           </ion-row>
+           <hr class="r">
+         
+         </ion-card-content>
+       
+    </div>
+
+
+
+
+
+
+
+
+        <div *ngFor="let item of more.ministries"(tap)="blog()">
+
+                <ion-card-content>
+             
+                   <ion-row>
+                     <ion-col>
+                            <span class="icon"><ion-icon name="create">&nbsp;&nbsp;&nbsp;</ion-icon></span>
+
+                            <span class="cc">Pastor's Blog</span>
+                           
+                     </ion-col>
+          
+                   </ion-row>
+                   <hr class="r">
+                 
+                 </ion-card-content>
+               
+            </div>
+
+            <div *ngFor="let subitem of more.about"(tap)="about($event, subitem)">
+
+                    <ion-card-content>
+                 
+                       <ion-row>
+                         <ion-col>
+                                <span class="icon"><ion-icon name="ios-information-circle">&nbsp;&nbsp;&nbsp;</ion-icon></span>
+    
+                                <span class="cc">About Us</span>
+                               
+                         </ion-col>
+              
+                       </ion-row>
+                       <hr class="r">
+                     
+                     </ion-card-content>
+                   
+                </div>
+
+
+                <div *ngFor="let subitem of more.connect" (tap)="connect($event, subitem)">
+
+                        <ion-card-content>
+                     
+                           <ion-row>
+                             <ion-col>
+                                    <span class="icon"><ion-icon name="md-call">&nbsp;&nbsp;&nbsp;</ion-icon></span>
+        
+                                    <span class="cc">Contact Us</span>
+                                   
+                             </ion-col>
+                  
+                           </ion-row>
+                           <hr class="r">
+                         
+                         </ion-card-content>
+                       
+                    </div>
+
+                    <div *ngFor="let subitem of more.social" (tap)="social($event, subitem)">
+
+                            <ion-card-content>
+                         
+                               <ion-row>
+                                 <ion-col>
+                                        <span class="icon"><ion-icon name="md-chatbubbles">&nbsp;&nbsp;&nbsp;</ion-icon></span>
+            
+                                        <span class="cc">Social Media</span>
+                                       
+                                 </ion-col>
+                      
+                               </ion-row>
+                               <hr class="r">
+                             
+                             </ion-card-content>
+                           
+                        </div>
+
+                    
 
 
  

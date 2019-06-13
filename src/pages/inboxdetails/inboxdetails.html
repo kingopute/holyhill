@@ -1,0 +1,33 @@
+<!--
+  Generated template for the InboxdetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{item.title}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+
+    
+
+    
+        <ion-card-content>
+            <img class="photo" [src]="item.image" (load)="item.loaded = true" [hidden]="!item.loaded" />
+         <img src="assets/img/loading.gif" [hidden]="item.loaded">
+     
+    
+         <p [innerHTML]="item.details"></p>
+         </ion-card-content>
+       
+   
+
+
+</ion-content>

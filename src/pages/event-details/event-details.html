@@ -9,14 +9,14 @@
 
 <ion-content>
 
-  <img [src]="item.photo" (load)="item.loaded = true" [hidden]="!item.loaded" />
-  <img src="assets/img/512PlaceHolderDark.png" [hidden]="item.loaded">
+  <img [src]="item.photo" class="photo" (load)="item.loaded = true" [hidden]="!item.loaded" />
+  <img src="assets/img/loading.gif" [hidden]="item.loaded">
   
   <div padding>
     
   <h3>{{item.title}}</h3>
     
-  <p class="info">{{item.day}}</p>
+  <p class="info">{{item.month}} {{item.day}}</p>
 
   <ion-grid class="space">
     <ion-row>
@@ -28,25 +28,31 @@
       </ion-col>
     </ion-row>
         
-    <ion-row class="spaces">
-      <ion-col col-1>
-        <ion-icon class="icons" name="time"></ion-icon>
-      </ion-col>
-      <ion-col col-11>
-        <p class="address">{{item.times}}</p>
-      </ion-col>
-    </ion-row>
+    
   </ion-grid>
 
   <p class="info">{{item.details}}</p>
   
-  <p class="text" [innerHTML]="item.info"></p>
 
   <div align="center" padding>
   
-  <a href="{{item.RegisterURL}}" onclick="window.open(this.href,'_system');return false;">
-    <button class="register" ion-button block color="myGreen" outline medium>Register Online!</button>  
-  </a> 
+  <a href="mailto:{{item.emailURL}}" onclick="window.open(this.href,'_system');return false;">
+    <button class="register" ion-button block color="myGreen" outline medium>Email</button>  
+  </a>
+<br>
+
+  <a href="https://wa.me/{{item.whatsappnumber}}" onclick="window.open(this.href,'_system');return false;">
+      <button class="register" ion-button block color="myGreen" outline medium>whatsapp</button>  
+    </a>
+
+    <!--<a href="https://wa.me/{{item.whatsapp}}" onclick="window.open(this.href,'_system');return false;">
+      <button class="register" ion-button block color="myGreen" outline medium>whatsapp</button>  
+    </a>-->
+  
+
+
+
+
 
   <button class="calendar" icon-right ion-button block color="myGreen" medium (tap)="createEvent()">Add to Calendar<ion-icon class="iconCal" name="alarm"></ion-icon></button>
   
@@ -54,7 +60,7 @@
 
   </div>
 
-  <!--<ion-card class="map">
+  <ion-card class="map">
     <sebm-google-map
       [latitude]="convertStringToNumber(item.map_lat)"
       [longitude]="convertStringToNumber(item.map_lng)"
@@ -64,6 +70,6 @@
       [longitude]="convertStringToNumber(item.map_lng)">
       </sebm-google-map-marker>
     </sebm-google-map>
-    </ion-card>-->
+    </ion-card>
 
 </ion-content>

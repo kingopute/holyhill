@@ -8,7 +8,42 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content class="welcome">
+<ion-content>
+
+
+
+    <ion-card *ngFor="let item of latestvideo">
+       <!-- <img class="photo" [src]="item.photo" (load)="item.loaded = true" [hidden]="!item.loaded" />
+            <img src="assets/img/loading.gif" [hidden]="item.loaded">-->
+           
+           <div class="stream"><p class="stream2">LIVE <br> STREAMING</p>
+            <p class="day">{{item.streamdays}}</p>
+            <br>
+            </div>
+          
+      
+          
+            
+            <ion-card-content>
+            
+                   <ion-row>
+        
+         <ion-col>
+          <button ion-button block outline medium (click)="video()"><ion-icon name="videocam"></ion-icon>&nbsp; Video</button>
+            </ion-col>
+        
+            <ion-col>
+                <button ion-button block outline medium (click)="audio()"><ion-icon name="musical-notes"></ion-icon>&nbsp; Audio</button>
+                  </ion-col>
+  
+              </ion-row>
+            </ion-card-content>
+        
+        
+            </ion-card>
+
+
+
   
     <ion-card class="border" *ngFor="let item of latestvideo">
       <iframe width="100%" height="215" [src]="item.videoURL | videos" frameborder="0" allowfullscreen></iframe>
@@ -18,30 +53,7 @@
       </ion-card-content>-->
     </ion-card>
   
-<ion-card class="border" *ngFor="let item of latestvideo">
-<img class="photo" [src]="item.photo" (load)="item.loaded = true" [hidden]="!item.loaded" />
-    <img src="assets/img/loading.gif" [hidden]="item.loaded">
-    
-    <ion-card-content>
-    
-           <ion-row>
 
- <ion-col>
-  <button class="register" ion-button block color="myWhite" outline medium (click)="launch(item.streamurl)">Click Here To Watch Us Live</button>
-    </ion-col>
-
-
-            <!-- <ion-col>
-<a href="{{item.streamurl}}" onclick="window.open(this.href,'_self',location'no');">       
-<button class="register" color="myWhite">Click Here To Watch Us Live</button>
- </a>
-
-        </ion-col>-->
-      </ion-row>
-    </ion-card-content>
-
-
-    </ion-card>
 
 
 

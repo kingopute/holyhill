@@ -1,10 +1,11 @@
 import {Component} from '@angular/core';
-import {NavController, Events, NavParams} from 'ionic-angular';
+import {NavController, Events, NavParams, IonicPage} from 'ionic-angular';
 import { LoginPage } from '../login/login';
 import { SermonsPage } from '../sermons/sermons';
 import { EventsPage } from '../events/events';
 import { MorePage } from '../more/more';
-//import { WeeklydeclarationPage } from '../weeklydeclaration/weeklydeclaration';
+import { StreamvideoPage } from '../streamvideo/streamvideo';
+import { StreamaudioPage } from '../streamaudio/streamaudio';
 //import {DbService} from '../../providers/db-service';
 import firebase from 'firebase';
 
@@ -40,7 +41,14 @@ firebase.database().ref('latestvideo').on('value', snapshot => {
  
 
 
+video() {
+  this.navCtrl.push(StreamvideoPage);
 
+}
+
+audio() {
+  this.navCtrl.push(StreamaudioPage);
+}
 
   
   ionViewDidEnter(){

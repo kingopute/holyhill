@@ -14,10 +14,50 @@
   
   <div padding>
     
-  <h1>{{subitem.heading}}</h1>
+ <!-- <h1>{{subitem.heading}}</h1>-->
       
   <p class="text" [innerHTML]="subitem.description"></p>
     
   </div>
 
+  <div padding>
+    <ion-row>
+      <ion-col>
+        <button  class="register" ion-button block color="myGreen">
+          <a href="https://wa.me/{{subitem.whatsappnumber}}">
+            <span class="icon"><ion-icon name="logo-whatsapp">&nbsp;&nbsp;&nbsp;</ion-icon></span>
+            
+            <span class="cc">Chat with us on whatsapp</span>
+              </a>
+            </button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+          <button  class="register" ion-button block color="myGreen">
+              <a href="tel:{{subitem.phonenumber}}">
+              <span class="icon"><ion-icon name="ios-call">&nbsp;&nbsp;&nbsp;</ion-icon></span>
+              
+              <span class="cc">Click to Call</span>
+                </a>
+              </button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+            <button  class="register" ion-button block color="myGreen">
+                <a href="mailto:{{subitem.emailURL}}">
+                <span class="icon"><ion-icon name="ios-mail">&nbsp;&nbsp;&nbsp;</ion-icon></span>
+                
+                <span class="cc">Send us a mail</span>
+                  </a>
+                </button>
+          </ion-col>
+
+
+    </ion-row>
+  
+    </div>
 </ion-content>

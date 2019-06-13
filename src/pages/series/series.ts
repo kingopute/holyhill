@@ -12,11 +12,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SeriesPage {
 
-  item = [];
+  subitem = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     
-    this.item = navParams.get('item')
+    this.subitem = navParams.get('subitem')
 
     // firebase.database().ref('sermons/episode').on('value', snapshot => {
     //   this.episode = snapshot.val();

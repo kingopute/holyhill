@@ -10,17 +10,14 @@ color: #fff;
 .title{
     font-family: home;
 }
-    .player {
-        margin-top: -0.35vh;
-    }
 
     .style {
         color: #fff;
     }
 
     h6 {
-        color: #fff;
-        font-family: home;
+        color: #b7aeb5;
+        //font-family: home;
     }
     h1{
         font-family: home;
@@ -34,6 +31,18 @@ color: #fff;
     p {
         font-family: home;
         padding: 0 20px 0 0px;
+        color: #b7aeb5;
+    }
+    .note{
+        text-align: center;
+        color: #fff;
+        font-family: home;
+    }
+
+    .but{
+        background-color: #b7aeb5;
+        color: #fff;
+        text-align: center;
     }
 
 }

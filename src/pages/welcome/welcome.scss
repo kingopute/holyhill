@@ -21,44 +21,40 @@ font-family: home;
     padding: 0 10px;
     color: map-get($colors, light);
   }
-  ion-icon{
-color: #fff;
-}
+ 
 
 .photo{
   max-height: 150px;
 }
 
-.register{
+.but{
 	font-family: home;
 }
 
-
-.quick-action {
-		//position: relative;
-		//width: 80%;
-		 background-color: transparent;
-		// position: absolute;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			font-size: 18px;
-			//margin: 0;
-		 color: #fff;
-		 text-align: center;
-		 font-family: home;
+.stream{
 	
-		ion-icon {
-			font-size: 1.5em;
-			width: 20px;
-			color: #901d78;
-			 background-color: transparent;
-			text-align: center;
-			 font-family: home;
-			
-			
-		}
-	}
+	background-color: #901d78;
+	font-size: 30px;
+	color: #ffffff;
+
+}
+
+.stream2{
+	background-color: #901d78;
+	font-size: 30px;
+	color: #ffffff;
+ margin-left: 20px;
+ 
+
+}
+
+.day{
+	background-color: #901d78;
+	font-size: 15px;
+	color: #ffffff;
+ margin-left: 20px;
+
+}
 
 
 
